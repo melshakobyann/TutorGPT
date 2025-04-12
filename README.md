@@ -69,4 +69,4 @@ This will start both the backend server and frontend static file server.
 - `make run` - Run both backend and frontend
 
 ## Demo
-[▶️ Watch the demo video](assets/TutorGPT.mp4)
+![Demo](assets/TutorGPT.gif)
