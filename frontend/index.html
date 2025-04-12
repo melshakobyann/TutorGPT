@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Disable any automatic refresh -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>TutorGPT</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Set favicon to data URL to prevent unnecessary requests -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎓</text></svg>" type="image/svg+xml">
+    <!-- Prevent favicon.ico fallback requests -->
+    <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
+    
+    <script>
+        // Simple flag to track if an API request is in progress
+        window.apiRequestInProgress = false;
+        
+        // Simple beforeunload handler
+        window.addEventListener('beforeunload', function(e) {
+            if (window.apiRequestInProgress) {
+                e.preventDefault();
+                e.returnValue = 'A request is in progress. Are you sure you want to leave?';
+                return e.returnValue;
+            }
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>TutorGPT</h1>
+        </header>
+
+        <main>
+            <div class="chat-container">
+                <div id="chat-messages" class="chat-messages">
+
+                </div>
+                
+                <div class="chat-input-container">
+                    <form id="chat-form">
+                        <textarea id="user-input" placeholder="Type your message..." autocomplete="off" rows="2"></textarea>
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html> 

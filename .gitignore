@@ -1,0 +1,15 @@
+.env
+
+/backend/bin/
+/backend/pkg/mod/
+
+/backend/vendor/
+/backend/tutorgpt
+/backend/tutorgpt.exe
+
+*.log
+*.out
+*.prof
+*.test
+
+.vscode/
