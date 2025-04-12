@@ -69,7 +69,4 @@ This will start both the backend server and frontend static file server.
 - `make run` - Run both backend and frontend
 
 ## Demo
-<video width="600" controls>
-  <source src="assets/TutorGPT.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+[▶️ Watch the demo video](assets/TutorGPT.mp4)
