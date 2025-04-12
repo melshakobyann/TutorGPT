@@ -1,6 +1,6 @@
 # TutorGPT
 
-TutorGPT is an AI-powered interactive tutor designed to teach subjects such as mathematics, coding, and physics. It leverages natural language understanding and interactive visualizations to provide comprehensive lectures, guided practical assignments, and adaptive learning experiences.
+TutorGPT is an AI-powered interactive tutor designed to teach subjects such as mathematics, coding, and physics..
 
 ## Project Structure
 
@@ -43,6 +43,14 @@ cp .env.example .env
 
 3. Run the application:
 ```bash
+tutorgpt # for unix based
+# or
+tutorgpt.exe # for windows
+```
+
+Optional
+If you want to build the project run
+```bash
 make run
 ```
 
@@ -60,6 +68,8 @@ This will start both the backend server and frontend static file server.
 - `make run-frontend` - Serve the frontend files
 - `make run` - Run both backend and frontend
 
-## License
-
-[Specify license information] 
+## Demo
+<video width="600" controls>
+  <source src="assets/TutorGPT.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
